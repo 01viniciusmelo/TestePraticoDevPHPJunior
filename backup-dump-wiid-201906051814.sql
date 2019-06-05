@@ -223,6 +223,8 @@ CREATE TABLE `users` (
   `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
   `name` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
   `email` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `cpf` varchar(14) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `data_nascimento` date DEFAULT NULL,
   `email_verified_at` timestamp NULL DEFAULT NULL,
   `password` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
   `remember_token` varchar(100) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
@@ -239,7 +241,7 @@ CREATE TABLE `users` (
 
 LOCK TABLES `users` WRITE;
 /*!40000 ALTER TABLE `users` DISABLE KEYS */;
-INSERT INTO `users` VALUES (1,'WiiD','wiid@gmail.com',NULL,'$2y$10$VtjPNJonBEKKJao8v7pNGeiOtKAPXW7xFGuJDEZQZWEZyKfl4hl7C',NULL,'2019-06-05 18:44:41','2019-06-05 18:44:41');
+INSERT INTO `users` VALUES (1,'WiiD','wiid@gmail.com','111.222.333-11','2002-06-10',NULL,'$2y$10$4AYRD.aQ2v9jOuOfzZc79uXYQk6OpOMGgZJ0Igp9dQokPIG96vCDa',NULL,'2019-06-05 18:44:41','2019-06-05 21:04:15');
 /*!40000 ALTER TABLE `users` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -256,4 +258,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2019-06-05 17:42:01
+-- Dump completed on 2019-06-05 18:14:40
