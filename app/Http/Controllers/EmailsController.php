@@ -58,7 +58,7 @@ class EmailsController extends Controller
             'email' => 'required',
         ],
             [
-                'email.required' => 'O Email é obrigatório.',
+                'email.required' => 'O e-mail é obrigatório.',
             ]
         );
 
@@ -104,7 +104,7 @@ class EmailsController extends Controller
             'email' => 'required',
         ],
             [
-                'email.required' => 'O Email é obrigatório.',
+                'email.required' => 'O e-mail é obrigatório.',
             ]
         );
 

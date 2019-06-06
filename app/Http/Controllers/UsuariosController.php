@@ -137,6 +137,14 @@ class UsuariosController extends Controller
      */
     public function destroy($id)
     {
+        $usuarios = User::get();
+
+        if ($usuarios->count() == 1) {
+            return redirect('usuarios')->withErrors([
+                'message' => 'Não é permitido excluir o usuário selecionado.',
+            ]);
+        }
+
         $usuario = User::find($id);
         $usuario->delete();
 

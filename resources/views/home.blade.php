@@ -15,23 +15,33 @@
                     @endif
 
                     <p>
-                        <a href="estados" class="btn btn-primary btn-lg" role="button" aria-pressed="true">Consulta de Estados</a>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <a href="estados" class="btn btn-primary btn-lg" role="button" aria-pressed="true">Consulta de Estados</a>
+                            </div>
+                            <div class="col-md-4">
+                                <a href="cidades" class="btn btn-primary btn-lg" role="button" aria-pressed="true">Consulta de Cidades</a>
+                            </div>
+                            <div class="col-md-4">
+                                <a href="telefones" class="btn btn-primary btn-lg" role="button" aria-pressed="true">Consulta de Telefones</a>
+                            </div>
+                        </div>
                     </p>
+
                     <p>
-                        <a href="cidades" class="btn btn-primary btn-lg" role="button" aria-pressed="true">Consulta de Cidades</a>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <a href="emails" class="btn btn-primary btn-lg" role="button" aria-pressed="true">Consulta de E-mails</a>
+                            </div>
+                            <div class="col-md-4">
+                                <a href="enderecos" class="btn btn-primary btn-lg" role="button" aria-pressed="true">Consulta de Endereços</a>
+                            </div>
+                            <div class="col-md-4">
+                                <a href="usuarios" class="btn btn-primary btn-lg" role="button" aria-pressed="true">Consulta de Usuários</a>
+                            </div>
+                        </div>
                     </p>
-                    <p>
-                        <a href="telefones" class="btn btn-primary btn-lg" role="button" aria-pressed="true">Consulta de Telefones</a>
-                    </p>
-                    <p>
-                        <a href="emails" class="btn btn-primary btn-lg" role="button" aria-pressed="true">Consulta de E-mails</a>
-                    </p>
-                    <p>
-                        <a href="enderecos" class="btn btn-primary btn-lg" role="button" aria-pressed="true">Consulta de Endereços</a>
-                    </p>
-                    <p>
-                        <a href="usuarios" class="btn btn-primary btn-lg" role="button" aria-pressed="true">Consulta de Usuários</a>
-                    </p>
+
                 </div>
 
             </div>

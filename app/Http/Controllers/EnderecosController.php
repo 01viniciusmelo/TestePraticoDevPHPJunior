@@ -62,11 +62,15 @@ class EnderecosController extends Controller
             'tipo' => 'required',
             'endereco' => 'required',
             'bairro' => 'required',
+            'estado_id' => 'required',
+            'cidade_id' => 'required',
         ],
             [
                 'tipo.required' => 'O Tipo é obrigatório.',
                 'endereco.required' => 'O Endereço é obrigatório.',
                 'bairro.required' => 'O Bairro é obrigatório.',
+                'estado_id.required' => 'O Estado é obrigatório.',
+                'cidade_id.required' => 'A Cidade é obrigatória.',
             ]
         );
 
@@ -133,11 +137,15 @@ class EnderecosController extends Controller
             'tipo' => 'required',
             'endereco' => 'required',
             'bairro' => 'required',
+            'estado_id' => 'required',
+            'cidade_id' => 'required',
         ],
             [
                 'tipo.required' => 'O Tipo é obrigatório.',
                 'endereco.required' => 'O Endereço é obrigatório.',
                 'bairro.required' => 'O Bairro é obrigatório.',
+                'estado_id.required' => 'O Estado é obrigatório.',
+                'cidade_id.required' => 'A Cidade é obrigatória.',
             ]
         );
 

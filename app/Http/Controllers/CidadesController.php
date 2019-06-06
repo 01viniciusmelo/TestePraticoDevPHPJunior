@@ -61,7 +61,16 @@ class CidadesController extends Controller
         $cidade = new Cidades();
 
         $cidade->nome = ucfirst($request->input('nome'));
-        $cidade->estado_id = $request->input('estado_id');
+
+        $estado = Estados::where([
+            [
+                'uf',
+                $request->input('estado_id'),
+            ],
+        ])
+            ->first();
+
+        $cidade->estado_id = $estado->id;
 
         $cidade->save();
 
@@ -76,10 +85,10 @@ class CidadesController extends Controller
      */
     public function edit($id)
     {
-        $cidades = Cidades::findOrFail($id);
+        $cidade = Cidades::findOrFail($id);
         $lista_estados = Estados::pluck('nome', 'id');
         return view('cidades.edit', [
-            'cidades' => $cidades,
+            'cidade' => $cidade,
             'id' => $id,
             'lista_estados' => $lista_estados,
         ]);
